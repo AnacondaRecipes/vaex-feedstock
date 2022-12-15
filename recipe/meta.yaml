@@ -41,12 +41,25 @@ app:
 
 about:
   home: https://vaex.io
+  dev_url: https://github.com/vaexio/vaex
   license: MIT
   license_family: MIT
   license_file: LICENSE.txt
+  license_url: https://github.com/vaexio/vaex/tree/master/licenses
   summary: 'Lazy Out-of-core dataframes and visualization for large (~billion rows/objects) tabular datasets'
+  description: "Vaex is a high performance Python library for lazy Out-of-Core DataFrames (similar to Pandas), to visualize and explore big tabular datasets."
   doc_url: https://vaex.io/docs
+  doc_source_url: https://github.com/vaexio/vaex/tree/master/docs
 
 extra:
+  skip-lints:
+    - avoid_noarch
+    - missing_pip_check
+
+  anaconda-services:
+    ref:  https://anaconda.zendesk.com/agent/tickets/26940
+    recipe-maintainers:
+      - bkreider
+
   recipe-maintainers:
     - maartenbreddels
